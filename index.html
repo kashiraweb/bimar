@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0f16">
+    <title>Fiesta de Ex-Promociones - U.E. Técnico Humanístico María Ayma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio de fondo -->
+    <audio id="background-music" loop>
+        <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Pantalla de bienvenida (al tocarla arranca la música) -->
+    <div id="welcome" class="welcome" role="dialog" aria-label="Bienvenida">
+        <div class="welcome-box">
+            <div class="logo-wrap">
+                <div class="logo-glow"></div>
+                <img src="img/logo.jpeg" alt="Logo U.E. María Ayma" class="logo-img">
+            </div>
+            <p class="eyebrow">Promoción 2026 · EVOLUTION</p>
+            <h2 class="welcome-title">¡Estás invitado!</h2>
+            <p class="welcome-sub">Gran Fiesta de Ex Promociones</p>
+            <button id="open-invite" class="btn btn-maps welcome-btn">✨ Abrir invitación ✨</button>
+            <p class="welcome-hint">🎵 Activa el sonido de tu celular</p>
+        </div>
+    </div>
+
+    <!-- Botón flotante de música -->
+    <button id="music-btn" class="music-btn" aria-label="Activar o pausar música">
+        <span class="music-icon">🎵</span> <span id="music-status">Play</span>
+    </button>
+
+    <!-- Confeti decorativo -->
+    <div id="confetti" aria-hidden="true"></div>
+
+    <main class="container">
+
+        <!-- ================= HERO ================= -->
+        <header class="hero reveal">
+            <div class="logo-wrap">
+                <div class="logo-glow"></div>
+                <img src="img/logo.jpeg" alt="Logo U.E. Maria Ayma" class="logo-img">
+            </div>
+            <p class="eyebrow">Promoción 2026 · EVOLUTION</p>
+            <h1>
+                <span class="h1-small">Gran Fiesta de</span>
+                <span class="h1-big">Ex Promociones</span>
+                <span class="h1-school">Unidad Educativa<br>Técnico Humanístico<br>"María Ayma"</span>
+            </h1>
+            <div class="divider"><span>✦</span></div>
+            <p class="hero-date">7 de Diciembre · 20:00 hrs</p>
+        </header>
+
+        <!-- ================= CONTADOR ================= -->
+        <section class="countdown-section reveal">
+            <p class="section-kicker">Faltan solo</p>
+            <div id="countdown" class="countdown">
+                <div class="count-card"><span id="days">0</span><small>Días</small></div>
+                <div class="count-card"><span id="hours">0</span><small>Horas</small></div>
+                <div class="count-card"><span id="minutes">0</span><small>Min</small></div>
+                <div class="count-card"><span id="seconds">0</span><small>Seg</small></div>
+            </div>
+            <p id="countdown-msg" class="countdown-msg" hidden>🎉 ¡Hoy es el gran día! 🎉</p>
+        </section>
+
+        <!-- ================= INVITACIÓN ================= -->
+        <section class="card reveal">
+            <h2 class="section-title">¡Ya se viene la fiesta de Expromociones!</h2>
+            <p class="lead">
+                Con el entusiasmo de revivir los mejores años y fortalecer nuestros lazos, la Promoción 2026 <strong>'EVOLUTION'</strong> tiene el honor de extenderle una cordial invitación a ser parte inolvidable del <strong>Gran Reencuentro de Expromociones Gestión 2026</strong>. Su presencia dará un brillo muy especial a esta celebración.
+            </p>
+
+            <div class="details-grid">
+                <div class="detail">
+                    <span class="detail-icon">📅</span>
+                    <span class="detail-label">Fecha</span>
+                    <span class="detail-value">7 de Diciembre</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-icon">⏰</span>
+                    <span class="detail-label">Hora</span>
+                    <span class="detail-value">20:00 (8:00 PM)</span>
+                </div>
+                <div class="detail">
+                    <span class="detail-icon">📍</span>
+                    <span class="detail-label">Lugar</span>
+                    <span class="detail-value">Salón de Eventos<br>"Quinta el Amanecer"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PADRINOS ================= -->
+        <section class="card card-gold reveal">
+            <div class="trophy">🏆</div>
+            <h2 class="section-title">Distinguidos Padrinos y Madrinas de Premiación</h2>
+
+            <p class="text">
+                Hay personas cuya huella en nuestra comunidad se define por su generosidad inagotable, su constante apoyo al deporte y su indiscutible calidad humana. Su valiosa trayectoria y espíritu solidario los han convertido en el pilar fundamental que hoy sostiene este gran evento.
+            </p>
+            <p class="text">
+                Es por ello que la <strong>Promoción 2026 'EVOLUTION'</strong> tiene el alto honor de realizar el nombramiento oficial como Padrinos y Madrinas de Premiación a quienes representan el verdadero significado del compromiso y la amistad:
+            </p>
+
+            <ul class="padrinos-grid">
+                <li><span class="num">1</span> Alexander Pinto</li>
+                <li><span class="num">2</span> Victor Cahuaya</li>
+                <li><span class="num">3</span> Mabel Cordova</li>
+                <li><span class="num">4</span> Nilda Quispe</li>
+                <li><span class="num">5</span> Miriam Mercado</li>
+                <li><span class="num">6</span> Ronal Quispe</li>
+                <li><span class="num">7</span> Juan Escalera</li>
+                <li><span class="num">8</span> Cristian Mamani</li>
+                <li><span class="num">9</span> Oscar Hidalgo</li>
+                <li><span class="num">10</span> Edgar Onofre</li>
+            </ul>
+
+            <p class="text">
+                Conociendo de cerca su nobleza y sabiendo que su respaldo a la juventud y al deporte siempre ha sido incondicional, damos por sentado su honrosa aceptación a esta distinción. Su apoyo no solo galardona a nuestros deportistas, sino que inmortaliza su nombre en la historia de este reencuentro.
+            </p>
+
+            <p class="signature">
+                Con el más profundo agradecimiento y estima,<br>
+                <strong>Promoción 2026 'EVOLUTION'</strong>
+            </p>
+        </section>
+
+        <!-- ================= MÚSICA ================= -->
+        <section class="band reveal">
+            <div class="band-icon">🎶</div>
+            <p>
+                Estimados padrinos, su presencia da un sentido muy especial a nuestra premiación deportiva. Queremos invitarles a compartir momentos de alegría, hermandad y la mejor música junto al grupo <strong>VENENO de La Paz</strong>. ¡Será un honor celebrar este gran cierre deportivo a su lado!
+            </p>
+        </section>
+
+        <!-- ================= QR APORTE ================= -->
+        <section class="card qr-card reveal">
+            <h2 class="section-title">¡Gracias por ser parte de este equipo!</h2>
+            <p class="text center">
+                Padrinos, el éxito de esta fiesta depende de todos. Si desean realizar su aporte de forma rápida y sencilla, pueden hacerlo a través del siguiente código QR:
+            </p>
+
+            <div class="qr-frame">
+                <img src="img/qr-aporte.jpg" alt="QR Aporte Padrinos" class="qr-img">
+            </div>
+
+            <p class="note">
+                Una vez realizada la transacción, por favor envíe su comprobante a cualquiera de los números de contacto. ¡Gracias por ayudarnos a hacer posible este sueño que revive nuestra historia!
+            </p>
+
+            <div class="contacts">
+                <p class="contacts-title">📞 Informes y consultas</p>
+                <div class="contact-buttons">
+                    <a href="tel:+59168633502" class="contact-pill">68633502</a>
+                    <a href="tel:+59166757546" class="contact-pill">66757546</a>
+                    <a href="tel:+59177076563" class="contact-pill">77076563</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALERÍA ================= -->
+        <section class="gallery reveal">
+            <h2 class="section-title">Galería de los Recuerditos</h2>
+            <div class="slider" id="slider">
+                <img src="img/foto1.jpeg" alt="Promoción 2026" class="slide active">
+                <img src="img/foto4.jpeg" alt="Recuerdo grupal 4" class="slide">
+                <img src="img/foto3.jpeg" alt="Recuerdo grupal 3" class="slide">
+                <img src="img/foto2.jpeg" alt="Recuerdo grupal 2" class="slide">
+            </div>
+            <div class="slider-controls">
+                <button class="arrow" id="prev" aria-label="Anterior">‹</button>
+                <div class="slider-dots" id="dots"></div>
+                <button class="arrow" id="next" aria-label="Siguiente">›</button>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta reveal">
+            <button id="rsvp" class="btn btn-confirm">🎉 ¡Confirmar Asistencia!</button>
+
+            <div class="location">
+                <h3>📍 ¿Cómo llegarás?</h3>
+                <a href="https://maps.app.goo.gl/B8P7JNWfsqgnXQuP6" target="_blank" rel="noopener" class="btn btn-maps">
+                    Abrir ubicación en Google Maps
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Promoción 2026 'EVOLUTION' · U.E. Técnico Humanístico María Ayma</p>
+            <p class="footer-motto">Educar es redimir</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
